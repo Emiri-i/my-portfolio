@@ -1,5 +1,5 @@
 import homeIcon from "../img/homepage_icon.svg"
-import "./Header.scss"
+import "./scss/Header.scss"
 // import styles from "../CssGlobal/_global.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
