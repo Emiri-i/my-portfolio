@@ -6,6 +6,12 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import PDF from "../media/CV__Emiri-Ishikawa.pdf"
 function Header() {
+  const goToLinkedin = () => {
+    window.open("https://www.linkedin.com/in/emiri-ishikawa-5579341b0/")
+  }
+  const goToGitHub = () => {
+    window.open("https://github.com/Emiri-i")
+  }
   return (
     <div className="header-wrapper">
       <div className="header-left-wrapper">
@@ -22,8 +28,8 @@ function Header() {
         </a>
       </div>
       <div className="header-right-wrapper">
-        <FontAwesomeIcon icon={faLinkedin} />
-        <FontAwesomeIcon icon={faGithub} />
+        <FontAwesomeIcon icon={faLinkedin} onClick={goToLinkedin} />
+        <FontAwesomeIcon icon={faGithub} onClick={goToGitHub} />
       </div>
     </div>
   )
