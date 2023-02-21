@@ -4,6 +4,7 @@ function AboutMe() {
     <div className="about-me-wrapper">
       <div className="circle-1"></div>
       <div className="circle-2-no-fill"></div>
+      <div className="circle-3"></div>
       <div className="welcome">Welcome!</div>
       <div className="my-name">Hi, I am Emiri.</div>
       <div className="job-title">Frontend Developer</div>

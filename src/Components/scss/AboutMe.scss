@@ -1,7 +1,7 @@
 @import "../../CssGlobal/global";
 
 .about-me-wrapper {
-  margin-right: 8vw;
+  margin-right: 5vw;
   position: absolute;
   > .circle-1 {
     position: absolute;
@@ -25,6 +25,17 @@
     border: solid 3px $grey;
     opacity: 60%;
     border-radius: 50%;
+  }
+  > .circle-3 {
+    position: absolute;
+    margin: 0;
+    top: 420px;
+    left: -100px;
+    width: 130px;
+    height: 130px;
+    background-color: $pink;
+    opacity: 70%;
+    border-radius: 60% 40% 35% 65% / 50% 50% 50% 50%;
   }
   > .welcome {
     font-size: 7rem;
