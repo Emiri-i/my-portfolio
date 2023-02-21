@@ -13,7 +13,6 @@ function Header() {
         <button className="header-prop">Tech Skills / Tools</button>
         <button className="header-prop">Projects</button>
         <button className="header-prop">Languages</button>
-        {/* <button className="header-prop">CV</button> */}
         <a
           className="header-prop"
           href={PDF}

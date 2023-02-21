@@ -23,6 +23,14 @@
     > .header-prop {
       margin-right: 2vw;
     }
+    > a {
+      text-decoration: none;
+      color: inherit;
+    }
+    > a:hover,
+    a:visited {
+      color: inherit;
+    }
   }
   .header-right-wrapper {
     svg {
