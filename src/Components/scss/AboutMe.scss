@@ -1,0 +1,18 @@
+@import "../../CssGlobal/global";
+
+.about-me-wrapper {
+  position: absolute;
+  > .welcome {
+    font-size: 3.5rem;
+    color: $grey;
+    transform: rotate(-15deg);
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Snell Roundhand", cursive;
+  }
+  > .my-name {
+    font-size: 4rem;
+    font-family: "Hiragino Maru Gothic Pro", sans-serif;
+  }
+}
