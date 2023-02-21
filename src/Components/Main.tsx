@@ -2,9 +2,9 @@ import AboutMe from "./AboutMe"
 import "./scss/Main.scss"
 function Main() {
   return (
-    <div className="main-wrapper">
+    <main className="main-wrapper">
       <AboutMe />
-    </div>
+    </main>
   )
 }
 export default Main
