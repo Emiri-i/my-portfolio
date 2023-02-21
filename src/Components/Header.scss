@@ -23,6 +23,9 @@
     > .header-prop {
       margin-right: 2vw;
     }
+    > .header-prop:hover {
+      cursor: pointer;
+    }
     > a {
       text-decoration: none;
       color: inherit;
@@ -37,6 +40,9 @@
       color: $darkGrey;
       font-size: 1.5rem;
       margin-right: 2vw;
+    }
+    svg:hover {
+      cursor: pointer;
     }
   }
 }
