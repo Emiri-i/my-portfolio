@@ -1,0 +1,24 @@
+@import "../../CssGlobal/global";
+
+.tech-skills-wrapper {
+  margin-top: 15vh;
+  > .tech-skills-title {
+    font-size: $sectionTitleFontSize;
+  }
+  > .language-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    > .skill {
+      background-color: $purple;
+      font-size: 1.5rem;
+      color: $white;
+      width: 16vw;
+      min-width: 200px;
+      text-align: center;
+      padding: 5px 0;
+      margin: 10px 20px 10px 0;
+    }
+  }
+}
