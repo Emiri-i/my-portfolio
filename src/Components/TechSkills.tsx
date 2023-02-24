@@ -5,7 +5,7 @@ import { SiRedux } from "react-icons/si"
 import { SiJavascript } from "react-icons/si"
 import { FaVuejs } from "react-icons/fa"
 import { SiVuetify } from "react-icons/si"
-import { SiHtml5 } from "react-icons/si"
+import { DiHtml5 } from "react-icons/di"
 import { DiCss3 } from "react-icons/di"
 import { FaSass } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
@@ -34,8 +34,8 @@ function TechSkills() {
           />
           <FaVuejs className="skill-icon" size="3.5em" title={"Vue.js"} />
           <SiVuetify className="skill-icon" size="3.5em" title={"Vuetify"} />
-          <SiHtml5 className="skill-icon" size="3.5em" title={"HTML"} />
-          <DiCss3 className="skill-icon" size="3.5em" title={"CSS"} />
+          <DiHtml5 className="skill-icon" size="3.7em" title={"HTML"} />
+          <DiCss3 className="skill-icon" size="3.7em" title={"CSS"} />
           <FaSass className="skill-icon" size="3.5em" title={"Sass"} />
         </div>
       </div>
