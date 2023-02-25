@@ -1,5 +1,8 @@
 @import "./CssGlobal/global.scss";
 .App {
   color: $darkGrey;
-  margin: 0 2vw;
+  overflow-y: hidden;
+  > .wrapper {
+    margin: 0 2vw;
+  }
 }
