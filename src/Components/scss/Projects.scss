@@ -22,11 +22,12 @@
       width: 33vw;
       > .project-each-title {
         font-size: 2.3rem;
-        text-align: center;
         margin-bottom: 20px;
+        font-family: $fontGillSans;
       }
       > .project-explanation {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        text-align: left;
       }
       > .skills-used {
         margin-top: 20px;
@@ -36,7 +37,6 @@
         margin-top: 40px;
         display: flex;
         align-items: center;
-        justify-content: center;
         &:hover {
           cursor: pointer;
           color: $pinkPurple;
@@ -44,6 +44,12 @@
         > .project-github-icon {
           margin-left: 10px;
         }
+      }
+      > .first-project {
+        justify-content: left;
+      }
+      > .second-project {
+        justify-content: right;
       }
     }
   }

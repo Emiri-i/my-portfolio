@@ -42,7 +42,7 @@ function Projects() {
               Vue, Vuetify, Typescript, Javascript, HTML, CSS, LocalStorage
             </div>
             <div
-              className="project-github-link"
+              className="project-github-link second-project"
               onClick={goToBookSearchAppGitHub}>
               <FaGithub className="skill-icon" size="1.5em" title={"GitHub"} />
               <div className="project-github-icon">Go to Github Page</div>
