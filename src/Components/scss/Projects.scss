@@ -37,6 +37,7 @@
         margin-top: 40px;
         display: flex;
         align-items: center;
+        justify-content: left;
         &:hover {
           cursor: pointer;
           color: $pinkPurple;
@@ -44,12 +45,6 @@
         > .project-github-icon {
           margin-left: 10px;
         }
-      }
-      > .first-project {
-        justify-content: left;
-      }
-      > .second-project {
-        justify-content: right;
       }
     }
   }
