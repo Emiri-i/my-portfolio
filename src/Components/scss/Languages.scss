@@ -4,12 +4,17 @@
   margin-top: 20vh;
   > .section-title {
     font-size: $sectionTitleFontSize;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   > .langugages-content {
     font-size: 1.3rem;
-    .each-language {
-      margin-bottom: 5px;
+    > .each-language {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      .icon-languages-section {
+        color: $purple;
+      }
     }
   }
 }
