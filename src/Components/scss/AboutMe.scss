@@ -37,30 +37,34 @@
     border-radius: 60% 40% 35% 65% / 50% 50% 50% 50%;
   }
   > .welcome {
-    font-size: 6rem;
+    font-size: 5rem;
     color: $grey;
-    transform: rotate(-12deg);
+    transform: rotate(-10deg);
     position: relative;
-    top: -10px;
+    top: 0;
     left: -20px;
     font-family: "Snell Roundhand", cursive;
   }
   > .my-name {
     position: relative;
-    font-size: 5rem;
+    font-size: 5.6rem;
     line-height: 5rem;
+    top: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     letter-spacing: 0.1em;
-    top: 40px;
-    font-family: "Hiragino Maru Gothic Pro", sans-serif;
   }
   > .job-title {
     font-size: 2.5rem;
+    font-family: $fontAvenir;
     color: $purple;
-    margin: 52px 0 20px 0;
+    position: relative;
+    top: 40px;
   }
   > .about-me-description {
     position: relative;
-    font-size: 1.3rem;
+    top: 50px;
+    font-size: $explanationFontSize;
     line-height: 1.7rem;
   }
 }
