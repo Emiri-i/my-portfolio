@@ -1,6 +1,7 @@
 import AboutMe from "./AboutMe"
 import TechSkills from "./TechSkills"
 import Projects from "./Projects"
+import Languages from "./Languages"
 import "./scss/Main.scss"
 function Main() {
   return (
@@ -8,6 +9,7 @@ function Main() {
       <AboutMe />
       <TechSkills />
       <Projects />
+      <Languages />
     </main>
   )
 }

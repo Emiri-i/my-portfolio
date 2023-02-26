@@ -1,0 +1,15 @@
+@import "../../CssGlobal/global";
+
+.languages-section-wrapper {
+  margin-top: 20vh;
+  > .section-title {
+    font-size: $sectionTitleFontSize;
+    margin-bottom: 10px;
+  }
+  > .langugages-content {
+    font-size: 1.3rem;
+    .each-language {
+      margin-bottom: 5px;
+    }
+  }
+}
