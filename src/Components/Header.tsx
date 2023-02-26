@@ -1,5 +1,5 @@
 import homeIcon from "../img/homepage_icon.svg"
-import "./Header.scss"
+import "./scss/Header.scss"
 // import styles from "../CssGlobal/_global.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
@@ -13,7 +13,7 @@ function Header() {
     window.open("https://github.com/Emiri-i")
   }
   return (
-    <div className="header-wrapper">
+    <header className="header-wrapper">
       <div className="header-left-wrapper">
         <img src={homeIcon}></img>
         <button className="header-prop">Tech Skills / Tools</button>
@@ -31,7 +31,7 @@ function Header() {
         <FontAwesomeIcon icon={faLinkedin} onClick={goToLinkedin} />
         <FontAwesomeIcon icon={faGithub} onClick={goToGitHub} />
       </div>
-    </div>
+    </header>
   )
 }
 

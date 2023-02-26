@@ -1,0 +1,66 @@
+@import "../../CssGlobal/global";
+
+.about-me-wrapper {
+  position: relative;
+  > .circle-1 {
+    position: absolute;
+    margin: 0;
+    top: 20px;
+    right: -150px;
+    padding-top: 120px;
+    width: 300px;
+    height: 120px;
+    background-color: $pink;
+    opacity: 70%;
+    border-radius: 30% 70% 35% 65% / 50% 50% 50% 50%;
+  }
+  > .circle-2-no-fill {
+    position: absolute;
+    margin: 0;
+    top: 100px;
+    right: -20px;
+    width: 350px;
+    height: 350px;
+    border: solid 3px $grey;
+    opacity: 60%;
+    border-radius: 50%;
+  }
+  > .circle-3 {
+    position: absolute;
+    margin: 0;
+    top: 420px;
+    left: -100px;
+    width: 130px;
+    height: 130px;
+    background-color: $pink;
+    opacity: 70%;
+    border-radius: 60% 40% 35% 65% / 50% 50% 50% 50%;
+  }
+  > .welcome {
+    font-size: 6rem;
+    color: $grey;
+    transform: rotate(-12deg);
+    position: relative;
+    top: -10px;
+    left: -20px;
+    font-family: "Snell Roundhand", cursive;
+  }
+  > .my-name {
+    position: relative;
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 0.1em;
+    top: 40px;
+    font-family: "Hiragino Maru Gothic Pro", sans-serif;
+  }
+  > .job-title {
+    font-size: 2.5rem;
+    color: $purple;
+    margin: 52px 0 20px 0;
+  }
+  > .about-me-description {
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+}

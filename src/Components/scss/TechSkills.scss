@@ -1,0 +1,21 @@
+@import "../../CssGlobal/global";
+
+.tech-skills-wrapper {
+  margin-top: 20vh;
+  > .tech-skills-title {
+    font-size: $sectionTitleFontSize;
+    position: relative;
+  }
+  .skill-title,
+  .tool-title {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+  .skill-icon {
+    margin-right: 15px;
+  }
+  > .skill-wrapper,
+  > .tool-wrapper {
+    margin-top: 10px;
+  }
+}
