@@ -13,10 +13,14 @@ import { SiFirebase } from "react-icons/si"
 import { SiVisualstudio } from "react-icons/si"
 import { FaNpm } from "react-icons/fa"
 import { VscTriangleRight } from "react-icons/vsc"
+import { useRef } from "react"
+import useIntersectionObserver from "../hooks/useIntersectionObserver"
 
 function TechSkills() {
+  const techSkillsElem = useRef<HTMLInputElement | null>(null)
+  useIntersectionObserver(techSkillsElem)
   return (
-    <div className="tech-skills-wrapper">
+    <div className="tech-skills-wrapper" ref={techSkillsElem}>
       <div className="tech-skills-title">Tech Skills / Tools</div>
       <div className="skill-wrapper">
         <div className="skill-title">
