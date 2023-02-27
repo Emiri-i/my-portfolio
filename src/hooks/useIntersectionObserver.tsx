@@ -21,5 +21,4 @@ const useIntersectionObserver = (
   }, [])
   return null
 }
-// )
 export default useIntersectionObserver
