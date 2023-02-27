@@ -6,6 +6,20 @@
     font-size: $sectionTitleFontSize;
     font-family: $fontAvenir;
     margin-bottom: 10px;
+    &.active {
+      animation: text-fadein 0.5s ease-in;
+    }
+  }
+  //animation for each project component
+  > .first-project {
+    &.active {
+      animation: project-fadein-from-left 1.2s ease-in;
+    }
+  }
+  > .second-project {
+    &.active {
+      animation: project-fadein-from-right 1.2s ease-in;
+    }
   }
   > .projects-each-content-wrapper {
     margin-top: 20px;
@@ -51,5 +65,44 @@
   }
   .second-project {
     margin-top: 80px;
+  }
+}
+
+@keyframes text-fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes project-fadein-from-left {
+  0% {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes project-fadein-from-right {
+  0% {
+    opacity: 0;
+    transform: translate(-50px);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
