@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react"
+import { useRef } from "react"
 import useIntersectionObserver from "../hooks/useIntersectionObserver"
 import "./scss/AboutMe.scss"
 

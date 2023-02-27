@@ -1,4 +1,4 @@
-import { useEffect, ForwardedRef, forwardRef } from "react"
+import { useEffect, ForwardedRef } from "react"
 
 const useIntersectionObserver = (
   elem: ForwardedRef<HTMLInputElement | null>
