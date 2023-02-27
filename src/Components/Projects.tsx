@@ -1,8 +1,17 @@
 import newsAppPhoto from "../img/sc_news_app.png"
 import bookSearchAppPhoto from "../img/sc_book_search_app.png"
 import { FaGithub } from "react-icons/fa"
+import { useRef } from "react"
+import useIntersectionObserver from "../hooks/useIntersectionObserver"
 import "./scss/Projects.scss"
+
 function Projects() {
+  const projectTitle = useRef<HTMLInputElement | null>(null)
+  useIntersectionObserver(projectTitle)
+  const firstProjectElement = useRef<HTMLInputElement | null>(null)
+  useIntersectionObserver(firstProjectElement)
+  const secondProjectElement = useRef<HTMLInputElement | null>(null)
+  useIntersectionObserver(secondProjectElement)
   const goToNewsAppGitHub = () => {
     window.open("https://github.com/Emiri-i/news-app")
   }
@@ -12,8 +21,12 @@ function Projects() {
   return (
     <>
       <div className="projects-section-wrapper">
-        <div className="projects-title">Projects</div>
-        <div className="projects-each-content-wrapper">
+        <div className="projects-title" ref={projectTitle}>
+          Projects
+        </div>
+        <div
+          className="projects-each-content-wrapper first-project"
+          ref={firstProjectElement}>
           <img src={newsAppPhoto} alt="news app image" />
           <div className="project-explanation-wrapper">
             <div className="project-each-title">NEWS APP</div>
@@ -31,7 +44,9 @@ function Projects() {
           </div>
         </div>
 
-        <div className="projects-each-content-wrapper second-project">
+        <div
+          className="projects-each-content-wrapper second-project"
+          ref={secondProjectElement}>
           <div className="project-explanation-wrapper">
             <div className="project-each-title">BOOK SEARCH APP</div>
             <div className="project-explanation">
