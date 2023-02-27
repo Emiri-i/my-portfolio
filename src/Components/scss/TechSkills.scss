@@ -1,4 +1,5 @@
 @import "../../CssGlobal/global";
+@import "../../CssGlobal/mixin";
 
 .tech-skills-wrapper {
   margin-top: 20vh;
@@ -27,7 +28,7 @@
     margin-top: 20px;
   }
   &.active {
-    animation: text-fadein 0.5s ease-in;
+    @include animation($name: text-fadein);
   }
 }
 @keyframes text-fadein {

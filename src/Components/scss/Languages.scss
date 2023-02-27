@@ -1,8 +1,9 @@
 @import "../../CssGlobal/global";
+@import "../../CssGlobal/mixin";
 
 .languages-section-wrapper {
   &.active {
-    animation: text-fadein 0.5s ease-in;
+    @include animation($name: text-fadein);
   }
   margin-top: 20vh;
   > .section-title {

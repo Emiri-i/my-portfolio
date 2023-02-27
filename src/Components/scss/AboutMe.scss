@@ -1,4 +1,5 @@
 @import "../../CssGlobal/global";
+@import "../../CssGlobal/mixin";
 .circle-1 {
   position: absolute;
   margin: 0;
@@ -63,7 +64,7 @@
     line-height: 1.7rem;
   }
   &.active {
-    animation: text-fadein 0.5s ease-in;
+    @include animation($name: text-fadein);
   }
 }
 @keyframes text-fadein {

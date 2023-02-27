@@ -1,4 +1,5 @@
 @import "../../CssGlobal/global";
+@import "../../CssGlobal/mixin";
 
 .projects-section-wrapper {
   margin-top: 20vh;
@@ -7,18 +8,18 @@
     font-family: $fontAvenir;
     margin-bottom: 10px;
     &.active {
-      animation: text-fadein 0.5s ease-in;
+      @include animation($name: text-fadein);
     }
   }
   //animation for each project component
   > .first-project {
     &.active {
-      animation: project-fadein-from-left 1.2s ease-in;
+      @include animation($name: project-fadein-from-left, $duration: 1.2s);
     }
   }
   > .second-project {
     &.active {
-      animation: project-fadein-from-right 1.2s ease-in;
+      @include animation($name: project-fadein-from-right, $duration: 1.2s);
     }
   }
   > .projects-each-content-wrapper {
