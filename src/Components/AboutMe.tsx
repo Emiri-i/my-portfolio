@@ -1,5 +1,11 @@
+import { useRef, useEffect } from "react"
+import useIntersectionObserver from "../hooks/useIntersectionObserver"
 import "./scss/AboutMe.scss"
+
 function AboutMe() {
+  const aboutMeElement = useRef<HTMLInputElement | null>(null)
+  useIntersectionObserver(aboutMeElement)
+
   return (
     <>
       <div className="circle-1"></div>
