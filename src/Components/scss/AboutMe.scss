@@ -1,5 +1,4 @@
 @import "../../CssGlobal/global";
-
 .circle-1 {
   position: absolute;
   margin: 0;
@@ -35,21 +34,19 @@
   border-radius: 60% 40% 35% 65% / 50% 50% 50% 50%;
 }
 .about-me-wrapper {
-  position: relative;
   > .welcome {
     font-size: 5rem;
     color: $grey;
     transform: rotate(-10deg);
     position: relative;
-    top: 0;
+    top: 20px;
     left: -20px;
     font-family: "Snell Roundhand", cursive;
   }
   > .my-name {
-    position: relative;
-    font-size: 5.6rem;
+    font-size: 7rem;
     line-height: 5rem;
-    top: 30px;
+    margin-top: 80px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     letter-spacing: 0.1em;
@@ -58,12 +55,10 @@
     font-size: 2.5rem;
     font-family: $fontAvenir;
     color: $purple;
-    position: relative;
-    top: 40px;
+    margin-top: 20px;
   }
   > .about-me-description {
-    position: relative;
-    top: 50px;
+    margin-top: 20px;
     font-size: $explanationFontSize;
     line-height: 1.7rem;
   }
