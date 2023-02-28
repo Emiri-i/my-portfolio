@@ -20,48 +20,56 @@ function TechSkills() {
   const techSkillsElem = useRef<HTMLInputElement | null>(null)
   useIntersectionObserver(techSkillsElem)
   return (
-    <div className="tech-skills-wrapper" ref={techSkillsElem}>
-      <div className="tech-skills-title">Tech Skills / Tools</div>
-      <div className="skill-wrapper">
-        <div className="skill-title">
-          <VscTriangleRight className="icon-skills-section" />
-          <div>Tech Skills</div>
+    <div className="circles-wrapper">
+      <div className="circle-tech-skill-1"></div>
+      <div className="circle-tech-skill-2"></div>
+      <div className="tech-skills-wrapper" ref={techSkillsElem}>
+        <div className="tech-skills-title">Tech Skills / Tools</div>
+        <div className="skill-wrapper">
+          <div className="skill-title">
+            <VscTriangleRight className="icon-skills-section" />
+            <div>Tech Skills</div>
+          </div>
+          <div className="skill-icons-wrapper">
+            <FaReact className="skill-icon" size="2.5em" title="React" />
+            <SiRedux className="skill-icon" size="2.5em" title={"Redux"} />
+            <SiTypescript
+              className="skill-icon"
+              size="2.5em"
+              title={"TypeScript"}
+            />
+            <SiJavascript
+              className="skill-icon"
+              size="2.5em"
+              title={"JavaScript"}
+            />
+            <FaVuejs className="skill-icon" size="2.5em" title={"Vue.js"} />
+            <SiVuetify className="skill-icon" size="2.5em" title={"Vuetify"} />
+            <DiHtml5 className="skill-icon" size="2.5em" title={"HTML"} />
+            <DiCss3 className="skill-icon" size="2.5em" title={"CSS"} />
+            <FaSass className="skill-icon" size="2.5em" title={"Sass"} />
+          </div>
         </div>
-        <div className="skill-icons-wrapper">
-          <FaReact className="skill-icon" size="2.5em" title="React" />
-          <SiRedux className="skill-icon" size="2.5em" title={"Redux"} />
-          <SiTypescript
-            className="skill-icon"
-            size="2.5em"
-            title={"TypeScript"}
-          />
-          <SiJavascript
-            className="skill-icon"
-            size="2.5em"
-            title={"JavaScript"}
-          />
-          <FaVuejs className="skill-icon" size="2.5em" title={"Vue.js"} />
-          <SiVuetify className="skill-icon" size="2.5em" title={"Vuetify"} />
-          <DiHtml5 className="skill-icon" size="2.5em" title={"HTML"} />
-          <DiCss3 className="skill-icon" size="2.5em" title={"CSS"} />
-          <FaSass className="skill-icon" size="2.5em" title={"Sass"} />
-        </div>
-      </div>
 
-      <div className="tool-wrapper">
-        <div className="tool-title">
-          <VscTriangleRight className="icon-skills-section" />
-          <div>Tools</div>
-        </div>
-        <div className="tool-icons-wrapper">
-          <FaGithub className="skill-icon" size="2.5em" title={"GitHub"} />
-          <SiFirebase className="skill-icon" size="2.5em" title={"Firebase"} />
-          <SiVisualstudio
-            className="skill-icon"
-            size="2.5em"
-            title={"Visual Studio Code"}
-          />
-          <FaNpm className="skill-icon" size="2.5em" title={"npm"} />
+        <div className="tool-wrapper">
+          <div className="tool-title">
+            <VscTriangleRight className="icon-skills-section" />
+            <div>Tools</div>
+          </div>
+          <div className="tool-icons-wrapper">
+            <FaGithub className="skill-icon" size="2.5em" title={"GitHub"} />
+            <SiFirebase
+              className="skill-icon"
+              size="2.5em"
+              title={"Firebase"}
+            />
+            <SiVisualstudio
+              className="skill-icon"
+              size="2.5em"
+              title={"Visual Studio Code"}
+            />
+            <FaNpm className="skill-icon" size="2.5em" title={"npm"} />
+          </div>
         </div>
       </div>
     </div>
