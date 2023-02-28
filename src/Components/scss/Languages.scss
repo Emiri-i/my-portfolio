@@ -1,7 +1,62 @@
 @import "../../CssGlobal/global";
 @import "../../CssGlobal/mixin";
 
+.circle-language-wrapper {
+  position: relative;
+  .circle-language-1 {
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    right: 200px;
+    width: 100px;
+    height: 100px;
+    border: dotted 4px $grey;
+    border-radius: 50%;
+  }
+  .circle-language-2 {
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    right: 120px;
+    width: 120px;
+    height: 120px;
+    border: dotted 4px $pinkPurple;
+    opacity: 50%;
+    border-radius: 50%;
+  }
+  .circle-language-3 {
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    right: 90px;
+    width: 150px;
+    height: 150px;
+    border: dotted 4px $pink;
+    opacity: 50%;
+    border-radius: 50%;
+  }
+  .circle-language-4 {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: solid 2px $grey;
+  }
+  .circle-language-5 {
+    position: absolute;
+    top: 400px;
+    left: 115px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 40%;
+    border: solid 2px $pink;
+  }
+}
 .languages-section-wrapper {
+  position: relative;
   &.active {
     @include animation($name: text-fadein);
   }

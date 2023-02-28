@@ -20,9 +20,10 @@ function TechSkills() {
   const techSkillsElem = useRef<HTMLInputElement | null>(null)
   useIntersectionObserver(techSkillsElem)
   return (
-    <div className="circles-wrapper">
-      <div className="circle-tech-skill-1"></div>
-      <div className="circle-tech-skill-2"></div>
+    <>
+      <div className="circles-wrapper">
+        <div className="circle-tech-skill-1"></div>
+      </div>
       <div className="tech-skills-wrapper" ref={techSkillsElem}>
         <div className="tech-skills-title">Tech Skills / Tools</div>
         <div className="skill-wrapper">
@@ -72,7 +73,7 @@ function TechSkills() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 export default TechSkills

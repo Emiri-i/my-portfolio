@@ -8,6 +8,13 @@ function Languages() {
   useIntersectionObserver(languageSectionElem)
   return (
     <>
+      <div className="circle-language-wrapper">
+        <div className="circle-language-1"></div>
+        <div className="circle-language-2"></div>
+        <div className="circle-language-3"></div>
+        <div className="circle-language-4"></div>
+        <div className="circle-language-5"></div>
+      </div>
       <div className="languages-section-wrapper" ref={languageSectionElem}>
         <div className="section-title">Languages</div>
         <div className="langugages-content">
