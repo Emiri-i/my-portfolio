@@ -36,6 +36,7 @@
 }
 .about-me-wrapper {
   position: relative;
+  opacity: 0;
   > .welcome {
     font-size: 5rem;
     color: $grey;
@@ -65,7 +66,8 @@
     line-height: 1.7rem;
   }
   &.active {
-    @include animation($name: text-fadein);
+    @include animation($name: text-fadein, $delay: 0.5s);
+    animation-fill-mode: forwards !important;
   }
 }
 @keyframes text-fadein {
