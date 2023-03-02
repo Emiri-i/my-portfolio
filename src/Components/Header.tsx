@@ -12,10 +12,13 @@ function Header() {
   const goToGitHub = () => {
     window.open("https://github.com/Emiri-i")
   }
+  const reloadPage = () => {
+    window.location.reload()
+  }
   return (
     <header className="header-wrapper">
       <div className="header-left-wrapper">
-        <img src={homeIcon}></img>
+        <img src={homeIcon} onClick={reloadPage}></img>
         <button className="header-prop">Tech Skills / Tools</button>
         <button className="header-prop">Projects</button>
         <button className="header-prop">Languages</button>
