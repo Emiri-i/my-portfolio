@@ -10,12 +10,10 @@ const BrowserSizeContextProvider: React.FC<{ children: React.ReactNode }> = ({
   useEffect(() => {
     onResize()
     setBrowserInnerWidth(window.innerWidth)
-    console.log("window.innerWidth", window.innerWidth)
   }, [])
   const onResize = () => {
     window.addEventListener("resize", function () {
       setBrowserInnerWidth(window.innerWidth)
-      console.log("window.innerWidth", window.innerWidth)
     })
   }
   const contextValue = {
