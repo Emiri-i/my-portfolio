@@ -6,9 +6,33 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import PDF from "../media/CV__Emiri-Ishikawa.pdf"
 import { browserSizeContext } from "../store/BrowserSizeContext"
+
 function Header() {
   const browserSizeCtx = useContext(browserSizeContext)
   const [isActive, setIsActive] = useState(false)
+
+  const [techSkillSectionTop, setTechSkillSectionDom] = useState(0)
+  const [projectSectionTop, setProjectSectionDom] = useState(0)
+  const [languageSectionTop, setLanguageSectionDom] = useState(0)
+
+  useEffect(() => {
+    const techSkillSectionDom = document.querySelector(".tech-skills-wrapper")
+    if (techSkillSectionDom) {
+      setTechSkillSectionDom(techSkillSectionDom.getBoundingClientRect().top)
+    }
+    const projectSectionDom = document.querySelector(
+      ".projects-section-wrapper"
+    )
+    if (projectSectionDom) {
+      setProjectSectionDom(projectSectionDom.getBoundingClientRect().top)
+    }
+    const languageSectionDom = document.querySelector(
+      ".circle-language-wrapper"
+    )
+    if (languageSectionDom) {
+      setLanguageSectionDom(languageSectionDom.getBoundingClientRect().top)
+    }
+  }, [browserSizeCtx])
 
   const goToLinkedin = () => {
     window.open("https://www.linkedin.com/in/emiri-ishikawa-5579341b0/")
@@ -18,6 +42,23 @@ function Header() {
   }
   const reloadPage = () => {
     window.location.reload()
+  }
+  const scrollToTeckSkillSection = () => {
+    windowScroll(techSkillSectionTop)
+  }
+  const scrollToProjectSection = () => {
+    windowScroll(projectSectionTop)
+  }
+  const scrollToLanguageSection = () => {
+    windowScroll(languageSectionTop)
+  }
+  const windowScroll = (targetScrollTop: number) => {
+    window.scrollTo({
+      left: 0,
+      top: targetScrollTop,
+      behavior: "smooth",
+    })
+    setIsActive(false)
   }
   return (
     <>
@@ -58,9 +99,21 @@ function Header() {
           </header>
           <div className={isActive ? "mobile-menu active" : "mobile-menu"}>
             <ul className="mobile-menu__main">
-              <li className="mobile-menu__item">Tech Skills / Tools</li>
-              <li className="mobile-menu__item">Projects </li>
-              <li className="mobile-menu__item">Languages</li>
+              <li
+                className="mobile-menu__item"
+                onClick={scrollToTeckSkillSection}>
+                Tech Skills / Tools
+              </li>
+              <li
+                className="mobile-menu__item"
+                onClick={scrollToProjectSection}>
+                Projects{" "}
+              </li>
+              <li
+                className="mobile-menu__item"
+                onClick={scrollToLanguageSection}>
+                Languages
+              </li>
             </ul>
           </div>
         </div>
