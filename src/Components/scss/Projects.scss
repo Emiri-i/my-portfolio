@@ -11,6 +11,58 @@
       @include animation($name: text-fadein);
     }
   }
+
+  //responsive style < 800px
+  > .projects-each-content-wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 260px;
+    > img {
+      width: 80%;
+      height: 100%;
+      border: solid 2px $grey;
+      border-radius: 20px;
+    }
+    > .project-explanation-wrapper {
+      width: 80%;
+      margin-top: 30px;
+      > .project-each-title {
+        font-size: $subTitleFontSize;
+        margin-bottom: 20px;
+        font-family: $fontGillSans;
+        text-align: center;
+      }
+      > .project-explanation {
+        font-size: $explanationFontSize;
+        text-align: left;
+        text-align: center;
+      }
+      > .skills-used {
+        margin-top: 20px;
+        font-family: $fontOptima;
+        font-size: $explanationFontSize;
+        text-align: center;
+      }
+      > .project-github-link {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          cursor: pointer;
+          color: $purple;
+        }
+        > .project-github-icon {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  //untill here
+
   //animation for each project component
   > .first-project {
     &.active {
@@ -22,50 +74,59 @@
       @include animation($name: project-fadein-from-right, $duration: 1.2s);
     }
   }
-  > .projects-each-content-wrapper {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    img {
-      width: 48vw;
-      height: 100%;
-      border: solid 2px $grey;
-      border-radius: 20px;
-    }
-    .project-explanation-wrapper {
-      width: 33vw;
-      > .project-each-title {
-        font-size: $subTitleFontSize;
-        margin-bottom: 20px;
-        font-family: $fontGillSans;
-      }
-      > .project-explanation {
-        font-size: $explanationFontSize;
-        text-align: left;
-      }
-      > .skills-used {
-        margin-top: 20px;
-        font-family: $fontOptima;
-        font-size: $explanationFontSize;
-      }
-      > .project-github-link {
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        &:hover {
-          cursor: pointer;
-          color: $purple;
-        }
-        > .project-github-icon {
-          margin-left: 10px;
-        }
-      }
-    }
-  }
+
   .second-project {
-    margin-top: 80px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .projects-section-wrapper {
+    > .projects-each-content-wrapper {
+      margin-top: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 48vw;
+        height: 100%;
+        border: solid 2px $grey;
+        border-radius: 20px;
+      }
+      .project-explanation-wrapper {
+        margin-top: 0;
+        width: 33vw;
+        > .project-each-title {
+          font-size: $subTitleFontSize;
+          margin-bottom: 20px;
+          font-family: $fontGillSans;
+          text-align: left;
+        }
+        > .project-explanation {
+          font-size: $explanationFontSize;
+          text-align: left;
+        }
+        > .skills-used {
+          margin-top: 20px;
+          font-family: $fontOptima;
+          font-size: $explanationFontSize;
+          text-align: left;
+        }
+        > .project-github-link {
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: left;
+          &:hover {
+            cursor: pointer;
+            color: $purple;
+          }
+          > .project-github-icon {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
   }
 }
 

@@ -1,11 +1,14 @@
+import { useContext } from "react"
 import newsAppPhoto from "../img/sc_news_app.png"
 import bookSearchAppPhoto from "../img/sc_book_search_app.png"
 import { FaGithub } from "react-icons/fa"
 import { useRef } from "react"
 import useIntersectionObserver from "../hooks/useIntersectionObserver"
 import "./scss/Projects.scss"
+import { browserSizeContext } from "../store/BrowserSizeContext"
 
 function Projects() {
+  const browserSizeCtx = useContext(browserSizeContext)
   const projectTitle = useRef<HTMLInputElement | null>(null)
   useIntersectionObserver(projectTitle)
   const firstProjectElement = useRef<HTMLInputElement | null>(null)
@@ -47,23 +50,55 @@ function Projects() {
         <div
           className="projects-each-content-wrapper second-project"
           ref={secondProjectElement}>
-          <div className="project-explanation-wrapper">
-            <div className="project-each-title">BOOK SEARCH APP</div>
-            <div className="project-explanation">
-              This is an app that you can find books, and keep the record of the
-              books you finished reading.
-            </div>
-            <div className="skills-used">
-              Vue, Vuetify, Typescript, Javascript, HTML, CSS, LocalStorage
-            </div>
-            <div
-              className="project-github-link second-project"
-              onClick={goToBookSearchAppGitHub}>
-              <FaGithub className="skill-icon" size="1.5em" title={"GitHub"} />
-              <div className="project-github-icon">Go to Github Page</div>
-            </div>
-          </div>
-          <img src={bookSearchAppPhoto} alt="book search app image" />
+          {browserSizeCtx.browserWidth > 800 ? (
+            <>
+              <div className="project-explanation-wrapper">
+                <div className="project-each-title">BOOK SEARCH APP</div>
+                <div className="project-explanation">
+                  This is an app that you can find books, and keep the record of
+                  the books you finished reading.
+                </div>
+                <div className="skills-used">
+                  Vue, Vuetify, Typescript, Javascript, HTML, CSS, LocalStorage
+                </div>
+                <div
+                  className="project-github-link second-project"
+                  onClick={goToBookSearchAppGitHub}>
+                  <FaGithub
+                    className="skill-icon"
+                    size="1.5em"
+                    title={"GitHub"}
+                  />
+                  <div className="project-github-icon">Go to Github Page</div>
+                </div>
+              </div>
+              <img src={bookSearchAppPhoto} alt="book search app image" />
+            </>
+          ) : (
+            <>
+              <img src={bookSearchAppPhoto} alt="book search app image" />
+              <div className="project-explanation-wrapper">
+                <div className="project-each-title">BOOK SEARCH APP</div>
+                <div className="project-explanation">
+                  This is an app that you can find books, and keep the record of
+                  the books you finished reading.
+                </div>
+                <div className="skills-used">
+                  Vue, Vuetify, Typescript, Javascript, HTML, CSS, LocalStorage
+                </div>
+                <div
+                  className="project-github-link second-project"
+                  onClick={goToBookSearchAppGitHub}>
+                  <FaGithub
+                    className="skill-icon"
+                    size="1.5em"
+                    title={"GitHub"}
+                  />
+                  <div className="project-github-icon">Go to Github Page</div>
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </>
