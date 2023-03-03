@@ -1,0 +1,13 @@
+@mixin animation(
+  $name,
+  $duration: 0.5s,
+  $timing-function: ease-in,
+  $delay: 0s
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+  }
+}

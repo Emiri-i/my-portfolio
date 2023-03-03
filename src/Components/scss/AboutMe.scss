@@ -1,12 +1,13 @@
 @import "../../CssGlobal/global";
-
-.about-me-wrapper {
+@import "../../CssGlobal/mixin";
+.about-me-circle-wrapper {
   position: relative;
-  > .circle-1 {
+  z-index: 0;
+  .circle-1 {
     position: absolute;
     margin: 0;
-    top: 20px;
-    right: -150px;
+    top: 80px;
+    right: -100px;
     padding-top: 120px;
     width: 300px;
     height: 120px;
@@ -14,7 +15,7 @@
     opacity: 70%;
     border-radius: 30% 70% 35% 65% / 50% 50% 50% 50%;
   }
-  > .circle-2-no-fill {
+  .circle-2-no-fill {
     position: absolute;
     margin: 0;
     top: 100px;
@@ -25,42 +26,60 @@
     opacity: 60%;
     border-radius: 50%;
   }
-  > .circle-3 {
+  .circle-3 {
     position: absolute;
     margin: 0;
-    top: 420px;
-    left: -100px;
-    width: 130px;
-    height: 130px;
+    top: 520px;
+    left: -30px;
+    width: 120px;
+    height: 120px;
     background-color: $pink;
     opacity: 70%;
     border-radius: 60% 40% 35% 65% / 50% 50% 50% 50%;
   }
+}
+.about-me-wrapper {
+  position: relative;
+  opacity: 0;
+  z-index: 5;
   > .welcome {
-    font-size: 6rem;
+    font-size: 4.5rem;
     color: $grey;
-    transform: rotate(-12deg);
+    transform: rotate(-10deg);
     position: relative;
-    top: -10px;
+    top: 20px;
     left: -20px;
     font-family: "Snell Roundhand", cursive;
   }
   > .my-name {
-    position: relative;
-    font-size: 5rem;
+    font-size: 5.8rem;
     line-height: 5rem;
+    margin-top: 80px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     letter-spacing: 0.1em;
-    top: 40px;
-    font-family: "Hiragino Maru Gothic Pro", sans-serif;
   }
   > .job-title {
     font-size: 2.5rem;
+    font-family: $fontAvenir;
     color: $purple;
-    margin: 52px 0 20px 0;
+    margin-top: 20px;
   }
   > .about-me-description {
-    position: relative;
-    font-size: 1.3rem;
+    margin-top: 20px;
+    font-size: $explanationFontSize;
     line-height: 1.7rem;
+  }
+  &.active {
+    @include animation($name: text-fadein, $delay: 0.5s);
+    animation-fill-mode: forwards !important;
+  }
+}
+@keyframes text-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
