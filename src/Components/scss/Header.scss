@@ -8,6 +8,10 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      > img {
+        margin-right: 2vw;
+        cursor: pointer;
+      }
     }
     .hamberger-wrapper {
       background-color: unset;
