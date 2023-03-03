@@ -66,9 +66,15 @@ function Header() {
         <header className="header-wrapper">
           <div className="header-left-wrapper">
             <img src={homeIcon} onClick={reloadPage}></img>
-            <button className="header-prop">Tech Skills / Tools</button>
-            <button className="header-prop">Projects</button>
-            <button className="header-prop">Languages</button>
+            <button className="header-prop" onClick={scrollToTeckSkillSection}>
+              Tech Skills / Tools
+            </button>
+            <button className="header-prop" onClick={scrollToProjectSection}>
+              Projects
+            </button>
+            <button className="header-prop" onClick={scrollToLanguageSection}>
+              Languages
+            </button>
             <a
               className="header-prop"
               href={PDF}
