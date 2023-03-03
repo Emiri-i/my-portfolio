@@ -57,14 +57,6 @@ function Header() {
             </button>
           </header>
           <div className={isActive ? "mobile-menu active" : "mobile-menu"}>
-            <div className="mobile-menu__close">
-              <button
-                className="mobile-menu__close-button"
-                onClick={() => setIsActive(!isActive)}>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
             <ul className="mobile-menu__main">
               <li className="mobile-menu__item">Tech Skills / Tools</li>
               <li className="mobile-menu__item">Projects </li>
