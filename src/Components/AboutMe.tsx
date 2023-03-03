@@ -8,9 +8,11 @@ function AboutMe() {
 
   return (
     <>
-      <div className="circle-1"></div>
-      <div className="circle-2-no-fill"></div>
-      <div className="circle-3"></div>
+      <div className="about-me-circle-wrapper">
+        <div className="circle-1"></div>
+        <div className="circle-2-no-fill"></div>
+        <div className="circle-3"></div>
+      </div>
       <div className="about-me-wrapper" ref={aboutMeElement}>
         <div className="welcome">Welcome!</div>
         <div className="my-name">Hi, I am Emiri.</div>
