@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     min-width: 260px;
     &.even-number-project {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
     > img {
       width: 80%;
@@ -86,7 +86,7 @@
       align-items: center;
       justify-content: space-between;
       &.even-number-project {
-        flex-direction: row;
+        flex-direction: row-reverse;
       }
       img {
         width: 48vw;
