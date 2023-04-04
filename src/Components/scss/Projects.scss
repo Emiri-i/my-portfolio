@@ -6,7 +6,7 @@
   > .projects-title {
     font-size: $sectionTitleFontSize;
     font-family: $fontAvenir;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     &.active {
       @include animation($name: text-fadein);
     }
@@ -14,12 +14,15 @@
 
   //responsive style < 800px
   > .projects-each-content-wrapper {
-    margin-top: 40px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     min-width: 260px;
+    &.even-number-project {
+      flex-direction: column-reverse;
+    }
     > img {
       width: 80%;
       height: 100%;
@@ -64,29 +67,27 @@
   //untill here
 
   //animation for each project component
-  > .first-project {
+  > .odd-number-project {
     &.active {
       @include animation($name: project-fadein-from-left, $duration: 1.2s);
     }
   }
-  > .second-project {
+  > .even-number-project {
     &.active {
       @include animation($name: project-fadein-from-right, $duration: 1.2s);
     }
-  }
-
-  .second-project {
-    margin-top: 100px;
   }
 }
 
 @media screen and (min-width: 800px) {
   .projects-section-wrapper {
     > .projects-each-content-wrapper {
-      margin-top: 70px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      &.even-number-project {
+        flex-direction: row;
+      }
       img {
         width: 48vw;
         height: 100%;
