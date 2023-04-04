@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.23af25d0.css",
-    "main.js": "/my-portfolio/static/js/main.8f91f808.js",
+    "main.css": "/my-portfolio/static/css/main.a5b9a915.css",
+    "main.js": "/my-portfolio/static/js/main.1bb6ea79.js",
     "static/media/sc_news_app.png": "/my-portfolio/static/media/sc_news_app.9e2498a5ead320a8f1c7.png",
     "static/media/sc_book_search_app.png": "/my-portfolio/static/media/sc_book_search_app.560a1f1e03c7046ebae1.png",
     "static/media/CV__Emiri-Ishikawa.pdf": "/my-portfolio/static/media/CV__Emiri-Ishikawa.8b1a5450f52f17e0b980.pdf",
+    "static/media/sc_rps_app.png": "/my-portfolio/static/media/sc_rps_app.191b01adc32a9a5303de.png",
     "static/media/homepage_icon.svg": "/my-portfolio/static/media/homepage_icon.75c2531da3381fefd8b2c4ce00924ac7.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.23af25d0.css.map": "/my-portfolio/static/css/main.23af25d0.css.map",
-    "main.8f91f808.js.map": "/my-portfolio/static/js/main.8f91f808.js.map"
+    "main.a5b9a915.css.map": "/my-portfolio/static/css/main.a5b9a915.css.map",
+    "main.1bb6ea79.js.map": "/my-portfolio/static/js/main.1bb6ea79.js.map"
   },
   "entrypoints": [
-    "static/css/main.23af25d0.css",
-    "static/js/main.8f91f808.js"
+    "static/css/main.a5b9a915.css",
+    "static/js/main.1bb6ea79.js"
   ]
 }
